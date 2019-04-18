@@ -1,0 +1,8 @@
+<h1>Task詳細ページ</h1>
+<p>タイトル: <%= @task.title%> </p>
+<p>タスク: <%= @task.content%> </p>
+<p>スタータス: <%= @task.status %></p>
+
+<%= link_to 'タスクの編集', edit_task_path(@task) %>
+<%= link_to 'タスクの削除', @message, method: :delete, data: {confirm: '削除しますか?'} %>
+<%= link_to 'タスク一覧へ', root_path %>
